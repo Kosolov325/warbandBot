@@ -1,6 +1,6 @@
 # WarbandBot
 
-[![N|Solid](https://i.imgur.com/8JgWGHI.png)](https://twitter.com/kosolov325)
+[![N|Solid](https://i.imgur.com/4a0Oaxd.png)](https://twitter.com/kosolov325)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
