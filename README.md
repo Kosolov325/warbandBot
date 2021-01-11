@@ -1,6 +1,6 @@
 # WarbandBot
 
-[![N|Solid](https://i.imgur.com/4a0Oaxd.png)](https://twitter.com/kosolov325)
+[![N|Solid](https://i.imgur.com/NbW4fSP.png)](https://twitter.com/kosolov325)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
@@ -21,7 +21,7 @@ Primerio em seu servidor de Mount & Blade: Warband crie um .xml e atualize as in
 And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
-Licença
+Licensa
 ----
 
 GNU General Public License
