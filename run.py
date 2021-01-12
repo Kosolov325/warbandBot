@@ -6,13 +6,13 @@ from discord.ext import tasks
 
 client = discord.Client()
 
-token = "###"
+token = "token_do_seu_bot"
 
 @tasks.loop(minutes=1)
 async def status():
-    channel = client.get_channel(int("797974917865013248"))
+    channel = client.get_channel(int("seu_canal_de_status"))
     try:
-        url = urllib.request.urlopen('http://localhost:7240/')
+        url = urllib.request.urlopen('seu_arquivo_xml')
         xml = ET.parse(url)
         root = xml.getroot()
 
@@ -26,10 +26,10 @@ async def status():
         for mapa in [ '.MapName' ]:
             value3 = xml.find(mapa);
             str3 = ET.tostring(value3, method="text").decode()
-        for passw in [ '.HasProtectedPassword' ]:
+        for passw in [ '.HasPassword' ]:
             value4 = xml.find(passw);
             str4 = ET.tostring(value4, method="text").decode()
-            if (str4 == "yes"):
+            if "Yes" or "yes" in str4:
                 whitelist=True
             else:
                 whitelist=False
@@ -46,7 +46,7 @@ async def status():
         embed.add_field(name="Map", value=str3, inline=True)
         if (whitelist == True):
             embed.add_field(name="Senha", value="Sim", inline=True)
-            embed.set_footer(icon_url = 'https://i.pinimg.com/originals/72/a8/91/72a8910613b3df0b066ad2fabf1284a2.png', text='Ops... talvez o servidor esteja em manuntenção') 
+            embed.set_footer(icon_url = 'https://i.pinimg.com/originals/72/a8/91/72a8910613b3df0b066ad2fabf1284a2.png', text='Ops... o servidor está com senha talvez esteja  em testes') 
         else:
             embed.add_field(name="Senha", value="Não", inline=True)
         await channel.purge()
