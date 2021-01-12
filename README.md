@@ -18,8 +18,6 @@ Primerio em seu servidor de Mount & Blade: Warband crie um .xml e atualize as in
 * Mude os embeds para como achar mais preferivel.
 * Pronto
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
 
 Licensa
 ----
