@@ -6,16 +6,16 @@ from discord.ext import tasks
 
 client = discord.Client()
 
-token = "token_do_seu_bot"
+token = "##########"
 
 @tasks.loop(minutes=1)
 async def status():
-    channel = client.get_channel(int("seu_canal_de_status"))
+    channel = client.get_channel(int("seu_canal"))
     try:
-        url = urllib.request.urlopen('seu_arquivo_xml')
+        url = urllib.request.urlopen('http://localhost:7240/')
         xml = ET.parse(url)
         root = xml.getroot()
-
+        whitelist = 0
 
         for name in [ './Name' ]:
             value1 = root.find(name);
@@ -29,12 +29,10 @@ async def status():
         for passw in [ '.HasPassword' ]:
             value4 = xml.find(passw);
             str4 = ET.tostring(value4, method="text").decode()
-            if "Yes" or "yes" in str4:
-                whitelist=True
-            else:
-                whitelist=False
+            if 'Yes' in str4:
+                whitelist = 1
 
-        if (whitelist == True):
+        if (whitelist == 1):
             cor=0xf46a01
         else:
             cor=0x38b10b
@@ -44,9 +42,9 @@ async def status():
         embed.add_field(name="Name", value=str1, inline=True)
         embed.add_field(name="Players", value=str2, inline=True)
         embed.add_field(name="Map", value=str3, inline=True)
-        if (whitelist == True):
+        if (whitelist == 1):
             embed.add_field(name="Senha", value="Sim", inline=True)
-            embed.set_footer(icon_url = 'https://i.pinimg.com/originals/72/a8/91/72a8910613b3df0b066ad2fabf1284a2.png', text='Ops... o servidor está com senha talvez esteja  em testes') 
+            embed.set_footer(icon_url = 'https://i.pinimg.com/originals/72/a8/91/72a8910613b3df0b066ad2fabf1284a2.png', text='Ops... o servidor está com senha talvez esteja em testes') 
         else:
             embed.add_field(name="Senha", value="Não", inline=True)
         await channel.purge()
