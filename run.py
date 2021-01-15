@@ -6,11 +6,11 @@ from discord.ext import tasks
 
 client = discord.Client()
 
-token = "##########"
+token = "NzAyNzA5NjEzMTU3NTQ4MDk4.XqD_Uw.aDrkAf7RcqOmOHqYAA_gNWClEyQ"
 
 @tasks.loop(minutes=1)
 async def status():
-    channel = client.get_channel(int("seu_canal"))
+    channel = client.get_channel(int("797887766801023014"))
     try:
         url = urllib.request.urlopen('http://localhost:7240/')
         xml = ET.parse(url)
