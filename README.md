@@ -2,7 +2,7 @@
 
 [![N|Solid](https://i.imgur.com/NbW4fSP.png)](https://twitter.com/kosolov325)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Kosolov325/warbandBot)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/Kosolov325/warbandBot/main)
 
 WarbandBot é um bot simples que conta com funcionalidades para servidores de Mount & Blade: Warband.
 Algumas funcionalidades são:
