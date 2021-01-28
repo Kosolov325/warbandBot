@@ -17,7 +17,7 @@ Algumas funcionalidades são:
 Primerio em seu servidor de Mount & Blade: Warband crie um .xml e atualize as informações através de um mission template ou como preferir (Ou simplesmente inicie seu servidor usando o WSE):
 
 * Mude as variaveis para apontar para o seu xml
-* Mude as embeds para como achar mais preferivel.
+* Mude as embeds para como achar mais preferivel
 * Pronto
 
 
