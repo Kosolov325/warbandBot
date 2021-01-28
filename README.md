@@ -4,13 +4,14 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
-WarbandBot é um bot simples que tem algumas funcionalidades para servidores de Mount & Blade: Warband.
+WarbandBot é um bot simples que conta com funcionalidades para servidores de Mount & Blade: Warband.
 Algumas funcionalidades são:
 
   - Checar quantidade de jogadores
   - Checar Mapas
   - Checar nome
-
+  -  etc
+  
 ### Como usar
 
 Primerio em seu servidor de Mount & Blade: Warband crie um .xml e atualize as informações através de um mission template ou como preferir (Ou simplesmente inicie seu servidor usando o WSE):
