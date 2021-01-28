@@ -13,10 +13,10 @@ Algumas funcionalidades são:
 
 ### Como usar
 
-Primerio em seu servidor de Mount & Blade: Warband crie um .xml e atualize as informações através de um mission template ou como preferir:
+Primerio em seu servidor de Mount & Blade: Warband crie um .xml e atualize as informações através de um mission template ou como preferir (Ou simplesmente inicie seu servidor usando o WSE):
 
-* Mude os variaveis para apontar para o seu xml
-* Mude os embeds para como achar mais preferivel.
+* Mude as variaveis para apontar para o seu xml
+* Mude as embeds para como achar mais preferivel.
 * Pronto
 
 
